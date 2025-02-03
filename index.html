@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese's Info</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #a7c8e5; /* 更柔和的浅蓝色，降低亮度 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            width: 90%; /* 设置为百分比宽度 */
+            max-width: 600px; /* 最大宽度限制 */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box; /* 保证内边距不会影响宽度计算 */
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 28px; /* 增大标题字体 */
+        }
+        h2 {
+            color: #e87e7e; /* 调整为更柔和的红色 */
+            font-size: 22px; /* 增大副标题字体 */
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 20px; /* 增大段落字体 */
+            color: #555;
+            margin: 10px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e87e7e; /* 同样调整为更柔和的红色 */
+        }
+
+        /* 媒体查询：适配手机屏幕 */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%; /* 在手机屏幕上占据更大空间 */
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px; /* 调整标题字体大小 */
+            }
+            h2 {
+                font-size: 20px; /* 调整副标题字体大小 */
+            }
+            p {
+                font-size: 18px; /* 调整段落字体大小 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>If I am lost, please contact my owner:</h2>
+        <img src="cheese.JPG" alt="Cheese" class="profile-img">
+        <h1>Cheese</h1>
+        <p><span class="highlight">📍 Address:</span> Loading</p>
+        <p><span class="highlight">📞 Contact:</span> Loading</p>
+        <p><span class="highlight">🔐 Microchip No. </span>Loading </p>
+        <p><span class="highlight">🛡️ I'm insured with BowWowMeow</p>
+    </div>
+</body>
+</html>
